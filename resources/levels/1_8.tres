@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="LevelData" format=3 uid="uid://cf26iyffuespq"]
+
+[ext_resource type="Script" uid="uid://yrfl70c40m2b" path="res://scripts/data/level_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "1_8"
+display_name = "1-8 白天"
+seed_value = 108
+available_plants = ["peashooter", "sunflower", "wallnut", "potatomine", "snowpea", "cherrybomb", "chomper", "repeater", "puffshroom"]
+zombie_pool = ["normal", "cone", "pole", "bucket", "flag", "football", "ducky"]
+waves = [{
+"count": 2,
+"delay": 8.0,
+"is_huge": false
+}, {
+"count": 2,
+"delay": 16.0,
+"is_huge": false
+}, {
+"count": 3,
+"delay": 20.0,
+"is_huge": false
+}, {
+"count": 3,
+"delay": 24.0,
+"is_huge": false
+}, {
+"count": 4,
+"delay": 28.0,
+"is_huge": false
+}, {
+"count": 4,
+"delay": 32.0,
+"is_huge": false
+}, {
+"count": 5,
+"delay": 36.0,
+"is_huge": false
+}, {
+"count": 7,
+"delay": 40.0,
+"is_huge": true
+}]

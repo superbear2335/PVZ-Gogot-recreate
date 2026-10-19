@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/plant_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "wallnut"
+display_name = "坚果墙"
+cost = 50
+cooldown = 30.0
+max_hp = 4000
+behavior = "blocker"
+damage = 0
+attack_interval = 0.0
+slow_factor = 0.0
+slow_duration = 0.0
+range_px = 0.0
+sun_amount = 0
+sun_interval = 0.0
+body_color = Color(0.79, 0.54, 0.23, 1)
+accent_color = Color(0.55, 0.35, 0.13, 1)

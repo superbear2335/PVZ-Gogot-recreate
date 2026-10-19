@@ -1,0 +1,24 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# 原版 PVZ 解包素材（reanim/图片/音频），版权原因不入库；
+# 需要时本地自备，或按 docs/asset-contract.md 用 tools/generate_pvz_assets.py 重新生成 assets/pvz
+/pak/
+
+# 导出产物
+/build/
+/export/
+
+# 第三方编辑器插件（godot_ai MCP 桥接），仅本地开发需要，不入库
+/addons/
+
+# Python 工具缓存（tools/ 下的离线素材生成脚本）
+__pycache__/
+*.py[cod]
+
+# 系统/编辑器杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

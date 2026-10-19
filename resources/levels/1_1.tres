@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LevelData" format=3 uid="uid://da04yufyj26aq"]
+
+[ext_resource type="Script" uid="uid://yrfl70c40m2b" path="res://scripts/data/level_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "1_1"
+display_name = "1-1 白天"
+seed_value = 101
+available_plants = ["peashooter", "sunflower"]
+zombie_pool = ["normal"]
+waves = [{
+"count": 1,
+"delay": 8.0,
+"is_huge": true
+}]

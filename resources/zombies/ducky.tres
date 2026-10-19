@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ZombieData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/zombie_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "ducky"
+display_name = "鸭子救生圈僵尸"
+speed = 11.0
+hp = 200
+point_value = 2

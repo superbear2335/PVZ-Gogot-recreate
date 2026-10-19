@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZombieData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/zombie_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "cone"
+display_name = "路障僵尸"
+max_hp = 200
+armor_hp = 370
+speed = 11.0
+eat_damage = 30
+eat_interval = 0.5
+point_cost = 2
+ability = ""
+body_color = Color(0.6, 0.64, 0.66, 1)
+armor_color = Color(0.85, 0.51, 0.16, 1)
+armor_label = "路障"

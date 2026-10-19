@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/plant_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "potatomine"
+display_name = "土豆地雷"
+cost = 25
+cooldown = 30.0
+max_hp = 300
+behavior = "mine"
+damage = 1800
+attack_interval = 0.0
+slow_factor = 0.0
+slow_duration = 0.0
+range_px = 0.0
+shots_per_volley = 1
+arm_time = 15.0
+fuse_time = 0.0
+aoe_cells = 0.0
+chew_time = 0.0
+sun_amount = 0
+sun_interval = 0.0
+body_color = Color(0.42, 0.29, 0.17, 1)
+accent_color = Color(0.29, 0.2, 0.12, 1)

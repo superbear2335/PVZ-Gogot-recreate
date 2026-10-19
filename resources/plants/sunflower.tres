@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/plant_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "sunflower"
+display_name = "向日葵"
+cost = 50
+cooldown = 7.5
+max_hp = 300
+behavior = "producer"
+damage = 0
+attack_interval = 0.0
+projectile_speed = 0.0
+slow_factor = 0.0
+slow_duration = 0.0
+range_px = 0.0
+sun_amount = 25
+sun_interval = 24.0
+body_color = Color(0.55, 0.43, 0.25, 1)
+accent_color = Color(0.24, 0.55, 0.2, 1)

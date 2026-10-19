@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/plant_data.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://scenes/projectile.tscn" id="2_projectile"]
+
+[resource]
+script = ExtResource("1_script")
+id = "snowpea"
+display_name = "寒冰射手"
+cost = 175
+cooldown = 7.5
+max_hp = 300
+behavior = "shooter"
+damage = 20
+attack_interval = 1.4
+projectile_scene = ExtResource("2_projectile")
+projectile_speed = 300.0
+projectile_color = Color(0.44, 0.78, 0.91, 1)
+slow_factor = 0.5
+slow_duration = 3.0
+range_px = 0.0
+shots_per_volley = 1
+sun_amount = 0
+sun_interval = 0.0
+body_color = Color(0.44, 0.78, 0.91, 1)
+accent_color = Color(0.23, 0.56, 0.69, 1)

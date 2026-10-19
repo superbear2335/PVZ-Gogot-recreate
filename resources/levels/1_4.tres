@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/level_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "1_4"
+display_name = "1-4 白天"
+seed_value = 104
+starting_sun = 50
+available_plants = ["peashooter", "sunflower", "wallnut", "potatomine", "snowpea"]
+zombie_pool = ["normal", "cone", "pole", "bucket"]
+waves = [{"delay": 8.0, "count": 2, "is_huge": false}, {"delay": 20.0, "count": 3, "is_huge": false}, {"delay": 25.0, "count": 4, "is_huge": false}, {"delay": 30.0, "count": 5, "is_huge": true}]
+sky_sun_first = 4.5
+sky_sun_min = 4.5
+sky_sun_max = 9.0
+sun_value = 25

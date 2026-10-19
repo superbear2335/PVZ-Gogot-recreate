@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ZombieData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/zombie_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "flag"
+display_name = "旗帜僵尸"
+speed = 16.5
+hp = 200
+point_value = 2

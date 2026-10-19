@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/plant_data.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://scenes/projectile.tscn" id="2_projectile"]
+
+[resource]
+script = ExtResource("1_script")
+id = "puffshroom"
+display_name = "小喷菇"
+cost = 0
+cooldown = 7.5
+max_hp = 300
+behavior = "shooter"
+damage = 20
+attack_interval = 1.4
+projectile_scene = ExtResource("2_projectile")
+projectile_speed = 300.0
+projectile_color = Color(0.62, 0.39, 0.74, 1)
+range_px = 260.0
+body_color = Color(0.62, 0.39, 0.74, 1)
+accent_color = Color(0.4, 0.22, 0.52, 1)

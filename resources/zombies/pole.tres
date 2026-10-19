@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZombieData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/zombie_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "pole"
+display_name = "撑杆跳僵尸"
+max_hp = 500
+armor_hp = 0
+speed = 11.0
+eat_damage = 30
+eat_interval = 0.5
+point_cost = 2
+ability = "pole"
+body_color = Color(0.56, 0.6, 0.62, 1)
+armor_color = Color(0.48, 0.35, 0.2, 1)
+armor_label = ""
