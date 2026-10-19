@@ -9,6 +9,18 @@
 2. 按 `F5`，进入主菜单。
 3. 选择已解锁关卡（初始仅 1-1；通关后解锁下一关）。
 
+## 本地依赖（不入库）
+
+本仓库只含可独立运行的代码与已导出的 `assets/pvz/` 精灵表。以下路径被 `.gitignore` 排除，clone 后不存在：
+
+| 路径 | 原因 |
+|---|---|
+| `pak/` | 原版 PVZ 解包素材（reanim / 图片 / 音频），版权原因不入库；参照 `docs/asset-contract.md` 自备后可用脚本重新生成精灵表 |
+| `addons/` | 第三方编辑器插件（godot_ai MCP 桥接），仅本机开发与自动化测试需要 |
+| `.godot/` | Godot 导入缓存，首次打开项目时自动重建 |
+
+`project.godot` 的 `[editor_plugins]` 仍启用了 `res://addons/godot_ai/plugin.cfg`：没装该插件时 Godot 启动会提示插件缺失，忽略或到编辑器里禁用即可，不影响游戏运行。
+
 ## 操作
 
 | 输入 | 行为 |
@@ -52,11 +64,12 @@ docs/          values.md 数值口径、asset-contract.md 素材契约、accepta
 ## 测试
 
 在 Godot 编辑器中通过 godot_ai 的测试面板运行 `test_run`（11 个 suite / 49 项，全绿）。
+该面板来自 `addons/godot_ai/`（不入库，需本地安装）；测试本身不依赖它。
 测试直接实例化关卡并手动 `_ready()` + `simulate()`，不依赖编辑器当前场景。
 
 ## 素材接入
 
-当前素材由 `pak/` 离线预渲染而来，见 `docs/asset-contract.md`：
+当前素材由 `pak/` 离线预渲染而来（`pak/` 因版权不入库），见 `docs/asset-contract.md`：
 
 ```bash
 python tools/generate_pvz_assets.py   # 重新生成 assets/pvz/*
